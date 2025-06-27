@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #0066cc;
+}

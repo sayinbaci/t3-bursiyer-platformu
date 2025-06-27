@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load i18n static %}
+{% block title %}{% trans "Haberler" %}{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6 text-red-700">{% trans "Haberler" %}</h1>
+
+<form method="get" class="mb-6 flex flex-wrap gap-4 items-center">
+    <input type="text" name="q" placeholder="{% trans 'Ara...' %}" value="{{ query }}"
+           class="border border-red-300 focus:border-red-500 px-4 py-2 rounded w-full md:w-1/2">
+
+    <select name="category" class="border border-red-300 focus:border-red-500 px-4 py-2 rounded w-full md:w-1/4">
+        <option value="">{% trans "Kategori Seçin" %}</option>
+        {% for cat in categories %}
+        <option value="{{ cat.id }}" {% if cat.id|stringformat:"s" == selected_category %}selected{% endif %}>{{ cat.name }}</option>
+        {% endfor %}
+    </select>
+
+    <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-semibold">
+        {% trans "Filtrele" %}
+    </button>
+</form>
+
+<div class="grid md:grid-cols-2 gap-6">
+    {% for news in news_list %}
+    <div class="bg-white border-2 border-red-300 hover:border-red-500 hover:shadow-lg p-4 rounded-xl transition">
+        <a href="{% url 'news_detail' news.slug %}" class="block">
+            <img src="{{ news.image.url }}" class="w-full h-48 object-cover rounded mb-3">
+            <h2 class="text-xl font-semibold text-red-700">{{ news.title }}</h2>
+            <p class="text-gray-500 text-sm mb-2">{{ news.date|date:"d M Y" }}</p>
+            <p class="text-gray-700 text-sm">{{ news.content|truncatewords:25 }}</p>
+        </a>
+    </div>
+    {% empty %}
+    <p class="text-gray-600">{% trans "Haber bulunamadı." %}</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

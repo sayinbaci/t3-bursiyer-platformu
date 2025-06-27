@@ -1,0 +1,399 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 11:26+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\apps\main\models.py:10 .\apps\main\models.py:71 .\apps\main\models.py:86
+#: .\apps\main\models.py:101
+msgid "Başlık"
+msgstr "Title"
+
+#: .\apps\main\models.py:11
+msgid "Slug"
+msgstr "Slug"
+
+#: .\apps\main\models.py:12 .\apps\main\models.py:87
+msgid "Açıklama"
+msgstr "Description"
+
+#: .\apps\main\models.py:13 .\apps\main\models.py:73
+msgid "Görsel"
+msgstr "Image"
+
+#: .\apps\main\models.py:14 .\templates\main\scholarship_program_detail.html:29
+msgid "Etiket"
+msgstr "Tag"
+
+#: .\apps\main\models.py:20 .\apps\main\models.py:39
+#, fuzzy
+#| msgid "Burs Programları"
+msgid "Burs Programı"
+msgstr "Scholarship Programs"
+
+#: .\apps\main\models.py:21 .\templates\footer.html:17
+#: .\templates\main\home.html:45
+#: .\templates\main\scholarship_program_list.html:3
+#: .\templates\main\scholarship_program_list.html:8
+msgid "Burs Programları"
+msgstr "Scholarship Programs"
+
+#: .\apps\main\models.py:41
+msgid "Soru"
+msgstr "Question"
+
+#: .\apps\main\models.py:42
+msgid "Cevap"
+msgstr "Answer"
+
+#: .\apps\main\models.py:45
+msgid "SSS"
+msgstr "FAQ"
+
+#: .\apps\main\models.py:46 .\templates\main\scholarship_program_detail.html:36
+msgid "Sıkça Sorulan Sorular"
+msgstr "Frequently Asked Questions"
+
+#: .\apps\main\models.py:52
+#, fuzzy
+#| msgid "Soyad"
+msgid "Ad Soyad"
+msgstr "Surname"
+
+#: .\apps\main\models.py:53 .\templates\main\application_form.html:22
+msgid "T.C. Kimlik No"
+msgstr "Turkish Republic Identity Number"
+
+#: .\apps\main\models.py:54 .\templates\main\application_form.html:27
+msgid "Telefon"
+msgstr "Telephone"
+
+#: .\apps\main\models.py:55
+msgid "E-posta"
+msgstr "Email"
+
+#: .\apps\main\models.py:56 .\templates\main\application_form.html:37
+msgid "Adres"
+msgstr "Address"
+
+#: .\apps\main\models.py:57
+#, fuzzy
+#| msgid "Öğrenci Belgesi (PDF/JPG)"
+msgid "Öğrenci Belgesi"
+msgstr "Student Certificate (PDF/JPG)"
+
+#: .\apps\main\models.py:58
+msgid "Motivasyon"
+msgstr "Motivation"
+
+#: .\apps\main\models.py:59
+msgid "Önemli Projeler Sıralaması"
+msgstr "Major Projects Ranking"
+
+#: .\apps\main\models.py:60
+#, fuzzy
+#| msgid "Başvuru Süreci"
+msgid "Başvuru Tarihi"
+msgstr "Application Process"
+
+#: .\apps\main\models.py:63 .\templates\footer.html:19
+#, fuzzy
+#| msgid "Başvur"
+msgid "Başvuru"
+msgstr "Apply"
+
+#: .\apps\main\models.py:64
+#, fuzzy
+#| msgid "Başvur"
+msgid "Başvurular"
+msgstr "Apply"
+
+#: .\apps\main\models.py:72
+#, fuzzy
+#| msgid "Başlık"
+msgid "Alt Başlık"
+msgstr "Title"
+
+#: .\apps\main\models.py:74 .\apps\main\models.py:90
+msgid "Aktif mi?"
+msgstr "Is it active?"
+
+#: .\apps\main\models.py:78
+msgid "Ana Slider"
+msgstr "Main Slider"
+
+#: .\apps\main\models.py:79
+msgid "Ana Sliderlar"
+msgstr "Main Sliders"
+
+#: .\apps\main\models.py:88
+msgid "İkon"
+msgstr "Icon"
+
+#: .\apps\main\models.py:89 .\apps\main\models.py:104
+msgid "Sıra"
+msgstr "Order"
+
+#: .\apps\main\models.py:94
+msgid "Başvuru Süreci Adımı"
+msgstr "Application Process"
+
+#: .\apps\main\models.py:95
+msgid "Başvuru Süreci Adımları"
+msgstr "Application Process"
+
+#: .\apps\main\models.py:102
+msgid "Bağlantı (URL)"
+msgstr ""
+
+#: .\apps\main\models.py:103
+msgid "Açılır Menü mü?"
+msgstr ""
+
+#: .\apps\main\models.py:105
+msgid "Üst Menü"
+msgstr ""
+
+#: .\apps\main\models.py:109
+msgid "Menü"
+msgstr ""
+
+#: .\apps\main\models.py:110
+msgid "Menüler"
+msgstr ""
+
+#: .\apps\stories\forms.py:11 .\apps\stories\models.py:40
+msgid "Ad"
+msgstr "Firstname"
+
+#: .\apps\stories\forms.py:12 .\apps\stories\models.py:41
+msgid "Soyad"
+msgstr "Surname"
+
+#: .\apps\stories\forms.py:13 .\apps\stories\models.py:42
+msgid "Yorum"
+msgstr "Comment"
+
+#: .\apps\stories\forms.py:14 .\apps\stories\models.py:45
+msgid "Profil Fotoğrafı"
+msgstr "Profile Image"
+
+#: .\apps\stories\forms.py:17
+msgid "Yorumunuzu yazın..."
+msgstr "Write your comment..."
+
+#: .\templates\base.html:11
+msgid "Burs Platformu"
+msgstr "Scholarship Platform"
+
+#: .\templates\base.html:111
+msgid "Başvur"
+msgstr "Apply"
+
+#: .\templates\footer.html:8
+msgid "T3 Burs Platformu"
+msgstr "T3 Scholarship Platform"
+
+#: .\templates\footer.html:9
+msgid "Gençlerin potansiyelini keşfetmesi için destek oluyoruz."
+msgstr "We support young people to discover their potential."
+
+#: .\templates\footer.html:14
+msgid "Hızlı Erişim"
+msgstr "Quick Access"
+
+#: .\templates\footer.html:16
+msgid "Anasayfa"
+msgstr "Home Page"
+
+#: .\templates\footer.html:18
+#, fuzzy
+#| msgid "Burs Programları"
+msgid "Bursiyer Yorumları"
+msgstr "Scholarship Programs"
+
+#: .\templates\footer.html:25
+msgid "İletişim"
+msgstr "Contact"
+
+#: .\templates\footer.html:28
+msgid "İstanbul, Türkiye"
+msgstr "Istanbul, Türkiye"
+
+#: .\templates\footer.html:35
+msgid "Bizi Takip Edin"
+msgstr "Follow Us"
+
+#: .\templates\footer.html:71
+msgid "Tüm hakları saklıdır."
+msgstr "All rights reserved."
+
+#: .\templates\loader.html:9
+msgid "Yükleniyor..."
+msgstr "Loading..."
+
+#: .\templates\main\application_form.html:3
+#: .\templates\main\application_form.html:6
+msgid "Burs Programı Başvuru Formu"
+msgstr "Scholarship Program Application Form"
+
+#: .\templates\main\application_form.html:17
+msgid "İsim Soyisim"
+msgstr "Name Surname"
+
+#: .\templates\main\application_form.html:43
+msgid "Öğrenci Belgesi (PDF/JPG)"
+msgstr "Student Certificate (PDF/JPG)"
+
+#: .\templates\main\application_form.html:48
+#: .\templates\stories\testimonials.html:140
+msgid "Dosya Seç"
+msgstr "Select file"
+
+#: .\templates\main\application_form.html:51
+#: .\templates\main\application_form.html:83
+#: .\templates\stories\testimonials.html:142
+#: .\templates\stories\testimonials.html:156
+msgid "Dosya seçilmedi"
+msgstr "No file selected"
+
+#: .\templates\main\application_form.html:58
+msgid "Neden T3 Vakfı bursiyeri olmak istiyorsun?"
+msgstr "Why do you want to be a T3 Foundation scholar?"
+
+#: .\templates\main\application_form.html:64
+msgid "Sence en önemli T3 Vakfı projesi hangisi? (sürükleyip sırala)"
+msgstr ""
+"What do you think is the most important T3 Foundation project? (drag and "
+"sort)"
+
+#: .\templates\main\application_form.html:67
+msgid "CTRL ile çoklu seçim yapabilirsiniz."
+msgstr "You can make multiple selections with CTRL."
+
+#: .\templates\main\application_form.html:73
+#: .\templates\stories\testimonials.html:149
+msgid "Gönder"
+msgstr "Submit"
+
+#: .\templates\main\application_success.html:4
+#, fuzzy
+#| msgid "Başvur"
+msgid "Başvuru Başarılı"
+msgstr "Apply"
+
+#: .\templates\main\application_success.html:8
+msgid "Başvurunuz başarıyla gönderildi!"
+msgstr "Your application has been sent successfully!"
+
+#: .\templates\main\application_success.html:9
+msgid "Değerlendirme sürecinden sonra sizinle iletişime geçilecektir."
+msgstr "You will be contacted after the evaluation process."
+
+#: .\templates\main\application_success.html:12
+msgid "Anasayfaya Dön"
+msgstr "Return to Home Page"
+
+#: .\templates\main\home.html:47
+msgid ""
+"Hayalini gerçekleştirmek için bir adım at. Sana uygun burs programını keşfet!"
+msgstr ""
+"Take a step to realize your dream. Discover the scholarship program that "
+"suits you!"
+
+#: .\templates\main\home.html:66
+msgid "Başvuru Süreci"
+msgstr "Application Process"
+
+#: .\templates\main\home.html:80 .\templates\stories\testimonials.html:62
+msgid "Başarı Hikayeleri"
+msgstr "Success Stories"
+
+#: .\templates\main\home.html:101
+msgid "Bursiyerlerimiz Ne Diyor?"
+msgstr "What Do Our Scholars Say?"
+
+#: .\templates\main\home.html:104
+msgid "Yorum Yap"
+msgstr "Comment"
+
+#: .\templates\main\home.html:132
+msgid "Son Haberler"
+msgstr "Latest News"
+
+#: .\templates\main\scholarship_program_list.html:23
+msgid "Detaylar için tıklayınız"
+msgstr "Click for details"
+
+#: .\templates\main\scholarship_program_list.html:28
+msgid "Henüz burs programı eklenmemiş."
+msgstr "No scholarship programs have been added yet."
+
+#: .\templates\news\news_list.html:3 .\templates\news\news_list.html:6
+msgid "Haberler"
+msgstr "News"
+
+#: .\templates\news\news_list.html:9
+msgid "Ara..."
+msgstr "Search..."
+
+#: .\templates\news\news_list.html:13
+msgid "Kategori Seçin"
+msgstr "Select Category"
+
+#: .\templates\news\news_list.html:20
+msgid "Filtrele"
+msgstr "Filter"
+
+#: .\templates\news\news_list.html:35
+msgid "Haber bulunamadı."
+msgstr "No news found."
+
+#: .\templates\stories\story_detail.html:4
+#, fuzzy
+#| msgid "Başarı Hikayeleri"
+msgid "Başarı Hikayesi"
+msgstr "Success Stories"
+
+#: .\templates\stories\story_detail.html:12
+msgid "Tüm Hikayeler"
+msgstr "Success Stories"
+
+#: .\templates\stories\story_detail.html:30
+msgid "Twitter'da Paylaş"
+msgstr "Share on Twitter"
+
+#: .\templates\stories\story_detail.html:34
+msgid "Facebook'ta Paylaş"
+msgstr "Share on Facebook"
+
+#: .\templates\stories\testimonials.html:3
+#: .\templates\stories\testimonials.html:34
+msgid "Bursiyerlerimizin Gözünden"
+msgstr "Through the Eyes of Our Scholars"
+
+#: .\templates\stories\testimonials.html:39
+msgid "Video Röportajlar"
+msgstr "Video Interviews"
+
+#: .\templates\stories\testimonials.html:83
+msgid "Yorumlarınız"
+msgstr "Your Comments"
+
+#: .\templates\stories\testimonials.html:109
+msgid "Yorum Bırak"
+msgstr "Leave a Comment"

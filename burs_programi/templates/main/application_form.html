@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static i18n widget_tweaks %}
+{% block title %}{% trans "Burs Programı Başvuru Formu" %}{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6 text-center text-red-700">{% trans "Burs Programı Başvuru Formu" %}</h1>
+<div id="form-error-popup"
+     class="hidden fixed top-6 right-6 bg-red-600 text-white px-6 py-3 rounded shadow-lg z-50">
+  <span id="form-error-text"></span>
+</div>
+<form method="post" enctype="multipart/form-data"
+      class="space-y-6 bg-white p-6 rounded-xl shadow max-w-3xl mx-auto border border-red-200">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+
+    <div>
+        <label for="{{ form.full_name.id_for_label }}" class="block text-red-700 font-medium mb-1">{% trans "İsim Soyisim" %}</label>
+        {{ form.full_name|add_class:"w-full border border-red-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" }}
+    </div>
+
+    <div>
+        <label for="{{ form.identity_number.id_for_label }}" class="block text-red-700 font-medium mb-1">{% trans "T.C. Kimlik No" %}</label>
+        {{ form.identity_number|add_class:"w-full border border-red-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" }}
+    </div>
+
+    <div>
+        <label for="{{ form.phone.id_for_label }}" class="block text-red-700 font-medium mb-1">{% trans "Telefon" %}</label>
+        {{ form.phone|add_class:"w-full border border-red-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" }}
+    </div>
+
+    <div>
+        <label for="{{ form.email.id_for_label }}" class="block text-red-700 font-medium mb-1">Email</label>
+        {{ form.email|add_class:"w-full border border-red-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" }}
+    </div>
+
+    <div>
+        <label for="{{ form.address.id_for_label }}" class="block text-red-700 font-medium mb-1">{% trans "Adres" %}</label>
+        {{ form.address|add_class:"w-full border border-red-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" }}
+    </div>
+
+    <div>
+      <label for="{{ form.student_certificate.id_for_label }}" class="block text-red-700 font-medium mb-1">
+        {% trans "Öğrenci Belgesi (PDF/JPG)" %}
+      </label>
+
+      <label for="{{ form.student_certificate.id_for_label }}"
+             class="inline-block px-4 py-2 bg-red-100 text-red-900 rounded cursor-pointer hover:bg-red-200 transition">
+        {% trans "Dosya Seç" %}
+      </label>
+
+      <span id="student-file-name" class="ml-2 text-gray-700">{% trans "Dosya seçilmedi" %}</span>
+
+      {{ form.student_certificate|add_class:"hidden" }}
+      {{ form.student_certificate.errors }}
+    </div>
+
+    <div>
+        <label for="{{ form.motivation.id_for_label }}" class="block text-red-700 font-medium mb-1">{% trans "Neden T3 Vakfı bursiyeri olmak istiyorsun?" %}</label>
+        {{ form.motivation|add_class:"w-full border border-red-300 rounded px-3 py-2 h-32 resize-y focus:outline-none focus:ring-2 focus:ring-red-400" }}
+    </div>
+
+    <div>
+        <label for="{{ form.important_project_order.id_for_label }}" class="block text-red-700 font-medium mb-1">
+            {% trans "Sence en önemli T3 Vakfı projesi hangisi? (sürükleyip sırala)" %}
+        </label>
+        {{ form.important_project_order|add_class:"w-full border border-red-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-400" }}
+        <p class="text-sm text-gray-500 mt-1">{% trans "CTRL ile çoklu seçim yapabilirsiniz." %}</p>
+    </div>
+
+    <div class="text-right">
+        <button type="submit"
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded-full transition shadow-sm hover:shadow-md">
+            {% trans "Gönder" %}
+        </button>
+    </div>
+</form>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const input = document.getElementById('{{ form.student_certificate.id_for_label }}');
+    const display = document.getElementById('student-file-name');
+
+    input.addEventListener('change', function () {
+      const name = this.files.length > 0 ? this.files[0].name : '{% trans "Dosya seçilmedi" %}';
+      display.innerText = name;
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.getElementById('form-error-popup');
+    const popupText = document.getElementById('form-error-text');
+
+    {% if form.non_field_errors %}
+      popupText.textContent = `{% for field in form %}{% for error in field.errors %}{{ error }}{% if not forloop.last %}, {% endif %}{% endfor %}{% endfor %}{% if form.non_field_errors %}, {{ form.non_field_errors|join:", " }}{% endif %}`;
+      popup.classList.remove('hidden');
+      setTimeout(() => popup.classList.add('hidden'), 5000);
+    {% endif %}
+  });
+</script>
+
+{% endblock %}

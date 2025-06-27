@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="relative z-0">
+  <!-- Yumuşak arka plan blob div -->
+  <div class="absolute -top-20 -left-20 w-[600px] h-[600px] bg-[#fbd5d5] rounded-full blur-3xl opacity-40 -z-10"></div>
+
+  <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Başlık -->
+    <h1 class="text-4xl font-extrabold text-center text-primary mb-8">
+      {{ scholarship.title }}
+    </h1>
+
+    <!-- Görsel -->
+    <div class="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-primary/30 shadow-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+      <img src="{{ scholarship.image.url }}" alt="{{ scholarship.title }}" class="w-full h-full object-cover object-center">
+    </div>
+
+    <!-- Açıklama -->
+    <div class="prose prose-lg max-w-none text-gray-800 mb-8">
+      {{ scholarship.description|safe }}
+    </div>
+
+    <!-- Etiket -->
+    <div class="text-center mb-12">
+      <span class="inline-block bg-primary/10 text-primary text-sm font-semibold px-4 py-2 rounded-full shadow-sm">
+        {% trans "Etiket" %}: {{ scholarship.tag }}
+      </span>
+    </div>
+
+    <!-- SSS -->
+    {% if scholarship.faqs.all %}
+    <div class="mt-12">
+      <h2 class="text-2xl font-bold text-primary mb-6 text-center sm:text-left">{% trans "Sıkça Sorulan Sorular" %}</h2>
+      <div class="space-y-4">
+        {% for faq in scholarship.faqs.all %}
+        <div x-data="{ open: false }" class="border border-gray-300 rounded-lg shadow-sm">
+          <button @click="open = !open"
+                  class="w-full flex justify-between items-center px-4 py-3 font-medium text-gray-800 bg-gray-100 hover:bg-gray-200 rounded-t-lg transition">
+            {{ faq.question }}
+            <svg :class="{ 'rotate-180': open }" class="w-5 h-5 transform transition-transform text-primary"
+                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div x-show="open" x-transition
+               class="px-4 py-3 text-gray-700 bg-white border-t border-gray-200">
+            {{ faq.answer }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+{% endblock %}

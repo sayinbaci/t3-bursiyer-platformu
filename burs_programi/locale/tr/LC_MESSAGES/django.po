@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-19 20:59+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\apps\main\models.py:9 .\apps\main\models.py:67 .\apps\main\models.py:81
+msgid "Başlık"
+msgstr ""
+
+#: .\apps\main\models.py:10
+msgid "Slug"
+msgstr ""
+
+#: .\apps\main\models.py:11 .\apps\main\models.py:82
+msgid "Açıklama"
+msgstr ""
+
+#: .\apps\main\models.py:12 .\apps\main\models.py:69
+msgid "Görsel"
+msgstr ""
+
+#: .\apps\main\models.py:13 .\templates\main\scholarship_program_detail.html:10
+msgid "Etiket"
+msgstr ""
+
+#: .\apps\main\models.py:16 .\apps\main\models.py:35
+msgid "Burs Programı"
+msgstr ""
+
+#: .\apps\main\models.py:17 .\templates\base.html:29
+#: .\templates\main\home.html:38
+#: .\templates\main\scholarship_program_list.html:3
+#: .\templates\main\scholarship_program_list.html:8
+#: .\templates\stories\testimonials.html:38
+msgid "Burs Programları"
+msgstr ""
+
+#: .\apps\main\models.py:37
+msgid "Soru"
+msgstr ""
+
+#: .\apps\main\models.py:38
+msgid "Cevap"
+msgstr ""
+
+#: .\apps\main\models.py:41
+msgid "SSS"
+msgstr ""
+
+#: .\apps\main\models.py:42 .\templates\main\scholarship_program_detail.html:14
+msgid "Sıkça Sorulan Sorular"
+msgstr ""
+
+#: .\apps\main\models.py:48
+msgid "Ad Soyad"
+msgstr ""
+
+#: .\apps\main\models.py:49 .\templates\main\application_form.html:19
+msgid "T.C. Kimlik No"
+msgstr ""
+
+#: .\apps\main\models.py:50 .\templates\main\application_form.html:24
+msgid "Telefon"
+msgstr ""
+
+#: .\apps\main\models.py:51
+msgid "E-posta"
+msgstr ""
+
+#: .\apps\main\models.py:52 .\templates\main\application_form.html:34
+msgid "Adres"
+msgstr ""
+
+#: .\apps\main\models.py:53
+msgid "Öğrenci Belgesi"
+msgstr ""
+
+#: .\apps\main\models.py:54
+msgid "Motivasyon"
+msgstr ""
+
+#: .\apps\main\models.py:55
+msgid "Önemli Projeler Sıralaması"
+msgstr ""
+
+#: .\apps\main\models.py:56
+msgid "Başvuru Tarihi"
+msgstr ""
+
+#: .\apps\main\models.py:59
+msgid "Başvuru"
+msgstr ""
+
+#: .\apps\main\models.py:60
+msgid "Başvurular"
+msgstr ""
+
+#: .\apps\main\models.py:68
+msgid "Alt Başlık"
+msgstr ""
+
+#: .\apps\main\models.py:70 .\apps\main\models.py:85
+msgid "Aktif mi?"
+msgstr ""
+
+#: .\apps\main\models.py:73
+msgid "Ana Slider"
+msgstr ""
+
+#: .\apps\main\models.py:74
+msgid "Ana Sliderlar"
+msgstr ""
+
+#: .\apps\main\models.py:83
+msgid "İkon"
+msgstr ""
+
+#: .\apps\main\models.py:84
+msgid "Sıra"
+msgstr ""
+
+#: .\apps\main\models.py:89
+msgid "Başvuru Süreci Adımı"
+msgstr ""
+
+#: .\apps\main\models.py:90
+msgid "Başvuru Süreci Adımları"
+msgstr ""
+
+#: .\apps\stories\forms.py:11 .\apps\stories\models.py:32
+msgid "Ad"
+msgstr ""
+
+#: .\apps\stories\forms.py:12 .\apps\stories\models.py:33
+msgid "Soyad"
+msgstr ""
+
+#: .\apps\stories\forms.py:13 .\apps\stories\models.py:34
+msgid "Yorum"
+msgstr ""
+
+#: .\apps\stories\forms.py:14 .\apps\stories\models.py:37
+msgid "Profil Fotoğrafı"
+msgstr ""
+
+#: .\apps\stories\forms.py:17
+msgid "Yorumunuzu yazın..."
+msgstr ""
+
+#: .\templates\base.html:7
+msgid "Burs Platformu"
+msgstr ""
+
+#: .\templates\base.html:18 .\templates\base.html:89
+msgid "T3 Burs Platformu"
+msgstr ""
+
+#: .\templates\base.html:23
+msgid "Anasayfa"
+msgstr ""
+
+#: .\templates\base.html:45
+msgid "Bursiyerlerimizin Gözünden"
+msgstr ""
+
+#: .\templates\base.html:51
+msgid "Haberler"
+msgstr ""
+
+#: .\templates\base.html:74
+msgid "Başvur"
+msgstr ""
+
+#: .\templates\main\application_form.html:3
+#: .\templates\main\application_form.html:6
+msgid "Burs Programı Başvuru Formu"
+msgstr ""
+
+#: .\templates\main\application_form.html:14
+msgid "İsim Soyisim"
+msgstr ""
+
+#: .\templates\main\application_form.html:39
+msgid "Öğrenci Belgesi (PDF/JPG)"
+msgstr ""
+
+#: .\templates\main\application_form.html:44
+msgid "Neden T3 Vakfı bursiyeri olmak istiyorsun?"
+msgstr ""
+
+#: .\templates\main\application_form.html:50
+msgid "Sence en önemli T3 Vakfı projesi hangisi? (sürükleyip sırala)"
+msgstr ""
+
+#: .\templates\main\application_form.html:53
+msgid "CTRL ile çoklu seçim yapabilirsiniz."
+msgstr ""
+
+#: .\templates\main\application_form.html:59
+msgid "Gönder"
+msgstr ""
+
+#: .\templates\main\home.html:40 .\templates\stories\testimonials.html:40
+msgid ""
+"Hayalini gerçekleştirmek için bir adım at. Sana uygun burs programını keşfet!"
+msgstr ""
+
+#: .\templates\main\home.html:59 .\templates\stories\testimonials.html:58
+msgid "Başvuru Süreci"
+msgstr ""
+
+#: .\templates\main\home.html:76 .\templates\stories\testimonials.html:74
+msgid "Başarı Hikayeleri"
+msgstr ""
+
+#: .\templates\main\home.html:98 .\templates\stories\testimonials.html:95
+msgid "Bursiyerlerimiz Ne Diyor?"
+msgstr ""
+
+#: .\templates\main\home.html:101 .\templates\stories\testimonials.html:98
+msgid "Yorum Yap"
+msgstr ""
+
+#: .\templates\main\home.html:127 .\templates\stories\testimonials.html:123
+msgid "Son Haberler"
+msgstr ""
+
+#: .\templates\main\scholarship_program_list.html:20
+msgid "Detaylar için tıklayınız"
+msgstr ""
+
+#: .\templates\main\scholarship_program_list.html:25
+msgid "Henüz burs programı eklenmemiş."
+msgstr ""
