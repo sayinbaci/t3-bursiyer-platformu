@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["python312", "gunicorn"]
+nixPkgs = ["python312", "gunicorn", "postgresql"]
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
