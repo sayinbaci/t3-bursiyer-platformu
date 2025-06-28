@@ -22,6 +22,13 @@
         }
       }
     </script>
+<style>
+  .custom-shadow {
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.3); /* Tailwind red-700 / #dc2626 */
+  }
+</style>
+
+
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-oBwGDb6v6QH9T+9fLdEu+4eqWZTtBAFJrX8p/1K9ElAn0KzR53AwHQFmlp+FljkP+5QCECeFfPvz3v68ZfjNVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
@@ -41,7 +48,7 @@
 </head>
 <body>
 
-<header class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md px-6 py-4">
+<header class="navbar fixed top-0 left-0 w-full z-50 bg-white px-6 py-4 custom-shadow">
   <div class="container mx-auto flex justify-between items-center">
 <!-- Logo -->
 <a href="{% url 'home' %}" class="flex items-center gap-2">
@@ -115,6 +122,8 @@
     </nav>
   </div>
 </header>
+<!-- HEADER GÖLGESİ -->
+<div class="-mt-1 w-full h-10 z-40 relative bg-gradient-to-b from-red-700 via-orange-600 to-transparent"></div>
 {% include 'loader.html' %}
 
 <main class="container mx-auto mt-24">

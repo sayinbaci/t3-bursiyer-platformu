@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 11:26+0300\n"
+"POT-Creation-Date: 2025-06-28 13:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,8 +45,8 @@ msgstr "Tag"
 msgid "Burs Programı"
 msgstr "Scholarship Programs"
 
-#: .\apps\main\models.py:21 .\templates\footer.html:17
-#: .\templates\main\home.html:45
+#: .\apps\main\models.py:21 .\templates\footer.html:32
+#: .\templates\main\home.html:44
 #: .\templates\main\scholarship_program_list.html:3
 #: .\templates\main\scholarship_program_list.html:8
 msgid "Burs Programları"
@@ -110,7 +110,7 @@ msgstr "Major Projects Ranking"
 msgid "Başvuru Tarihi"
 msgstr "Application Process"
 
-#: .\apps\main\models.py:63 .\templates\footer.html:19
+#: .\apps\main\models.py:63 .\templates\footer.html:34
 #, fuzzy
 #| msgid "Başvur"
 msgid "Başvuru"
@@ -158,23 +158,23 @@ msgstr "Application Process"
 
 #: .\apps\main\models.py:102
 msgid "Bağlantı (URL)"
-msgstr ""
+msgstr "Link (URL)"
 
 #: .\apps\main\models.py:103
 msgid "Açılır Menü mü?"
-msgstr ""
+msgstr "Drop Down Menu?"
 
 #: .\apps\main\models.py:105
 msgid "Üst Menü"
-msgstr ""
+msgstr "Top Menu"
 
 #: .\apps\main\models.py:109
 msgid "Menü"
-msgstr ""
+msgstr "Menu"
 
 #: .\apps\main\models.py:110
 msgid "Menüler"
-msgstr ""
+msgstr "Menus"
 
 #: .\apps\stories\forms.py:11 .\apps\stories\models.py:40
 msgid "Ad"
@@ -200,45 +200,45 @@ msgstr "Write your comment..."
 msgid "Burs Platformu"
 msgstr "Scholarship Platform"
 
-#: .\templates\base.html:111
+#: .\templates\base.html:118
 msgid "Başvur"
 msgstr "Apply"
 
-#: .\templates\footer.html:8
+#: .\templates\footer.html:23
 msgid "T3 Burs Platformu"
 msgstr "T3 Scholarship Platform"
 
-#: .\templates\footer.html:9
+#: .\templates\footer.html:24
 msgid "Gençlerin potansiyelini keşfetmesi için destek oluyoruz."
 msgstr "We support young people to discover their potential."
 
-#: .\templates\footer.html:14
+#: .\templates\footer.html:29
 msgid "Hızlı Erişim"
 msgstr "Quick Access"
 
-#: .\templates\footer.html:16
+#: .\templates\footer.html:31
 msgid "Anasayfa"
 msgstr "Home Page"
 
-#: .\templates\footer.html:18
+#: .\templates\footer.html:33
 #, fuzzy
 #| msgid "Burs Programları"
 msgid "Bursiyer Yorumları"
 msgstr "Scholarship Programs"
 
-#: .\templates\footer.html:25
+#: .\templates\footer.html:40
 msgid "İletişim"
 msgstr "Contact"
 
-#: .\templates\footer.html:28
+#: .\templates\footer.html:43
 msgid "İstanbul, Türkiye"
 msgstr "Istanbul, Türkiye"
 
-#: .\templates\footer.html:35
+#: .\templates\footer.html:50
 msgid "Bizi Takip Edin"
 msgstr "Follow Us"
 
-#: .\templates\footer.html:71
+#: .\templates\footer.html:59
 msgid "Tüm hakları saklıdır."
 msgstr "All rights reserved."
 
@@ -260,14 +260,14 @@ msgid "Öğrenci Belgesi (PDF/JPG)"
 msgstr "Student Certificate (PDF/JPG)"
 
 #: .\templates\main\application_form.html:48
-#: .\templates\stories\testimonials.html:140
+#: .\templates\stories\testimonials.html:163
 msgid "Dosya Seç"
 msgstr "Select file"
 
 #: .\templates\main\application_form.html:51
 #: .\templates\main\application_form.html:83
-#: .\templates\stories\testimonials.html:142
-#: .\templates\stories\testimonials.html:156
+#: .\templates\stories\testimonials.html:165
+#: .\templates\stories\testimonials.html:179
 msgid "Dosya seçilmedi"
 msgstr "No file selected"
 
@@ -286,7 +286,7 @@ msgid "CTRL ile çoklu seçim yapabilirsiniz."
 msgstr "You can make multiple selections with CTRL."
 
 #: .\templates\main\application_form.html:73
-#: .\templates\stories\testimonials.html:149
+#: .\templates\stories\testimonials.html:172
 msgid "Gönder"
 msgstr "Submit"
 
@@ -308,32 +308,38 @@ msgstr "You will be contacted after the evaluation process."
 msgid "Anasayfaya Dön"
 msgstr "Return to Home Page"
 
-#: .\templates\main\home.html:47
+#: .\templates\main\home.html:46
 msgid ""
 "Hayalini gerçekleştirmek için bir adım at. Sana uygun burs programını keşfet!"
 msgstr ""
 "Take a step to realize your dream. Discover the scholarship program that "
 "suits you!"
 
-#: .\templates\main\home.html:66
+#: .\templates\main\home.html:70
 msgid "Başvuru Süreci"
 msgstr "Application Process"
 
-#: .\templates\main\home.html:80 .\templates\stories\testimonials.html:62
+#: .\templates\main\home.html:99 .\templates\stories\testimonials.html:78
 msgid "Başarı Hikayeleri"
 msgstr "Success Stories"
 
-#: .\templates\main\home.html:101
+#: .\templates\main\home.html:147
+msgid "Son Haberler"
+msgstr "Latest News"
+
+#: .\templates\main\home.html:164
+#, fuzzy
+#| msgid "Tüm Hikayeler"
+msgid "Tüm Haberleri Gör"
+msgstr "Success Stories"
+
+#: .\templates\main\home.html:180
 msgid "Bursiyerlerimiz Ne Diyor?"
 msgstr "What Do Our Scholars Say?"
 
-#: .\templates\main\home.html:104
+#: .\templates\main\home.html:182
 msgid "Yorum Yap"
 msgstr "Comment"
-
-#: .\templates\main\home.html:132
-msgid "Son Haberler"
-msgstr "Latest News"
 
 #: .\templates\main\scholarship_program_list.html:23
 msgid "Detaylar için tıklayınız"
@@ -342,6 +348,16 @@ msgstr "Click for details"
 #: .\templates\main\scholarship_program_list.html:28
 msgid "Henüz burs programı eklenmemiş."
 msgstr "No scholarship programs have been added yet."
+
+#: .\templates\news\news_detail.html:22
+#: .\templates\stories\story_detail.html:30
+msgid "Twitter'da Paylaş"
+msgstr "Share on Twitter"
+
+#: .\templates\news\news_detail.html:26
+#: .\templates\stories\story_detail.html:34
+msgid "Facebook'ta Paylaş"
+msgstr "Share on Facebook"
 
 #: .\templates\news\news_list.html:3 .\templates\news\news_list.html:6
 msgid "Haberler"
@@ -373,27 +389,26 @@ msgstr "Success Stories"
 msgid "Tüm Hikayeler"
 msgstr "Success Stories"
 
-#: .\templates\stories\story_detail.html:30
-msgid "Twitter'da Paylaş"
-msgstr "Share on Twitter"
-
-#: .\templates\stories\story_detail.html:34
-msgid "Facebook'ta Paylaş"
-msgstr "Share on Facebook"
-
 #: .\templates\stories\testimonials.html:3
-#: .\templates\stories\testimonials.html:34
+#: .\templates\stories\testimonials.html:36
 msgid "Bursiyerlerimizin Gözünden"
 msgstr "Through the Eyes of Our Scholars"
 
-#: .\templates\stories\testimonials.html:39
+#: .\templates\stories\testimonials.html:37
+msgid ""
+"Bursiyerlerimizin deneyimlerine yakından tanık olun. Video röportajlar, "
+"başarı hikayeleri ve yorumlar burada!"
+msgstr "Witness the experiences of our scholars up close. Video interviews,"
+ "success stories and comments are here!"
+
+#: .\templates\stories\testimonials.html:48
 msgid "Video Röportajlar"
 msgstr "Video Interviews"
 
-#: .\templates\stories\testimonials.html:83
+#: .\templates\stories\testimonials.html:105
 msgid "Yorumlarınız"
 msgstr "Your Comments"
 
-#: .\templates\stories\testimonials.html:109
+#: .\templates\stories\testimonials.html:132
 msgid "Yorum Bırak"
 msgstr "Leave a Comment"

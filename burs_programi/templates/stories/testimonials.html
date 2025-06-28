@@ -31,18 +31,27 @@
   }
 </style>
 
-<h1 class="text-3xl font-bold text-center text-red-700 sm:text-center">{% trans "Bursiyerlerimizin Gözünden" %}</h1>
-<br><br>
-
+<!-- HERO BAŞLIK -->
+<section class="bg-red-50 py-12 px-4 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold text-red-700 mb-4">{% trans "Bursiyerlerimizin Gözünden" %}</h1>
+  <p class="text-gray-600 text-lg max-w-3xl mx-auto">{% trans "Bursiyerlerimizin deneyimlerine yakından tanık olun. Video röportajlar, başarı hikayeleri ve yorumlar burada!" %}</p>
+</section>
+<!-- YALNIZCA YATAY TERS ÇEVRİLMİŞ (SİVRİ UCU SOLDA) AYIRAÇ -->
+<div class="relative -mt-4">
+  <svg class="w-full h-16 md:h-24 text-red-50 transform -scale-x-100" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="currentColor" fill-opacity="1"
+      d="M0,224L60,213.3C120,203,240,181,360,165.3C480,149,600,139,720,160C840,181,960,235,1080,229.3C1200,224,1320,160,1380,128L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" />
+  </svg>
+</div>
 <!-- Interviews -->
-<section class="mb-12">
-  <h2 class="text-3xl font-bold text-center text-red-700 sm:text-center">{% trans "Video Röportajlar" %}</h2>
+<section class="mb-16">
+  <h2 class="text-3xl font-bold text-center text-red-700 sm:text-center mb-6">{% trans "Video Röportajlar" %}</h2>
 
   <div class="swiper interviews-swiper">
     <div class="swiper-wrapper">
       {% for video in interviews %}
       <div class="swiper-slide p-4">
-        <div class="bg-red-50 p-4 rounded shadow">
+        <div class="bg-white border-2 border-red-300 hover:border-red-500 hover:shadow-lg transition p-4 rounded-xl">
           <h3 class="font-bold mb-2 text-center text-red-700">{{ video.title }}</h3>
           <div class="aspect-w-16 aspect-h-9">
             <iframe class="w-full h-60" src="{{ video.embed_url }}" frameborder="0" allowfullscreen></iframe>
@@ -56,14 +65,21 @@
     <div class="swiper-button-next"></div>
   </div>
 </section>
-
+<!-- AYIRAÇ -->
+<div class="relative">
+  <svg class="w-full h-16 md:h-24 text-red-50" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="currentColor" fill-opacity="1"
+          d="M0,224L60,213.3C120,203,240,181,360,165.3C480,149,600,139,720,160C840,181,960,235,1080,229.3C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+    </path>
+  </svg>
+</div>
 <!-- Success Stories -->
-<section class="carousel p-8">
+<section class="carousel p-8 bg-red-50">
   <h2 class="text-3xl font-bold text-center text-red-700 mb-8">{% trans "Başarı Hikayeleri" %}</h2>
   <div class="swiper stories-swiper">
     <div class="swiper-wrapper">
       {% for story in stories %}
-      <a href="{% url 'story_detail' story.slug %}" class="swiper-slide group border-2 border-red-300 hover:border-red-500 hover:shadow-lg transition rounded-xl p-6 text-center flex flex-col items-center justify-between">
+      <a href="{% url 'story_detail' story.slug %}" class="swiper-slide h-[440px] group border-2 border-red-300 hover:border-red-500 hover:shadow-lg transition rounded-xl p-6 text-center flex flex-col items-center justify-between bg-white">
         <img src="{{ story.image.url }}" class="h-40 w-full object-cover mb-4 rounded-xl">
         <h4 class="text-lg font-bold text-red-700 mb-2">{{ story.title }}</h4>
         <p class="text-sm text-gray-600">{{ story.content|truncatewords:25 }}</p>
@@ -75,37 +91,65 @@
     <div class="swiper-pagination mt-2"></div>
   </div>
 </section>
-
+<!-- YALNIZCA YATAY TERS ÇEVRİLMİŞ (SİVRİ UCU SOLDA) AYIRAÇ -->
+<div class="relative -mt-4">
+  <svg class="w-full h-16 md:h-24 text-red-50 transform -scale-x-100" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <path fill="currentColor" fill-opacity="1"
+      d="M0,224L60,213.3C120,203,240,181,360,165.3C480,149,600,139,720,160C840,181,960,235,1080,229.3C1200,224,1320,160,1380,128L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" />
+  </svg>
+</div>
 <!-- Testimonials -->
-<section class="testimonial p-8 bg-red-50">
+<section class="testimonial p-8 bg-white">
   <div class="max-w-7xl mx-auto">
-    <div class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
-      <h2 class="text-3xl font-bold text-center text-red-700 sm:text-left">{% trans "Yorumlarınız" %}</h2>
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl font-bold text-red-700">{% trans "Yorumlarınız" %}</h2>
     </div>
     <div class="swiper testimonials-swiper">
-      <div class="swiper-wrapper">
-        {% for t in testimonials %}
-        <div class="swiper-slide h-[340px] w-full sm:w-[300px] group border-2 border-red-300 hover:border-red-500 hover:shadow-lg transition rounded-xl p-6 text-center flex flex-col items-center justify-between">
-          {% if t.profile_image %}
-          <img src="{{ t.profile_image.url }}" class="w-24 h-24 rounded-full mb-4 object-cover">
-          {% else %}
-          <img src="{% static 'main/img/avatar.png' %}" class="w-24 h-24 rounded-full mb-4 object-cover">
-          {% endif %}
-          <p class="text-sm text-gray-600 mb-2">"{{ t.content|truncatewords:20 }}"</p>
-          <small class="text-red-700 font-medium mt-auto">- {{ t.name }} {{ t.surname }}</small>
-        </div>
-        {% endfor %}
+    <div class="swiper-wrapper justify-center">
+      {% for t in testimonials %}
+      <div class="swiper-slide h-[340px] w-full sm:w-[300px] group border-2 border-red-300 hover:border-red-500 hover:shadow-lg transition rounded-xl p-6 text-center flex flex-col items-center justify-between bg-red-50">
+        {% if t.profile_image %}
+        <img src="{{ t.profile_image.url }}" class="w-24 h-24 rounded-full mb-4 object-cover">
+        {% else %}
+        <img src="{% static 'main/img/avatar.png' %}" class="w-24 h-24 rounded-full mb-4 object-cover">
+        {% endif %}
+        <p class="text-sm text-gray-600 mb-2">"{{ t.content|truncatewords:20 }}"</p>
+        <small class="text-red-700 font-medium mt-auto">- {{ t.name }} {{ t.surname }}</small>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-pagination mt-2"></div>
+      {% endfor %}
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination mt-2"></div>
+  </div>
   </div>
 </section>
 
+<!-- DAHA YUMUŞAK GRADYANLI ÇİFT DALGALI AYIRAÇ -->
+<div class="relative -mt-4">
+  <svg class="w-full h-40 md:h-56" viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="grad-soft-wave" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#fecaca; stop-opacity:0.2" />
+        <stop offset="30%" style="stop-color:#f87171; stop-opacity:0.5" />
+        <stop offset="70%" style="stop-color:#f87171; stop-opacity:0.5" />
+        <stop offset="100%" style="stop-color:#fecaca; stop-opacity:0.2" />
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad-soft-wave)" fill-opacity="1"
+      d="
+        M0,64
+        C120,160,360,0,720,96
+        C1080,192,1320,64,1440,160
+        V320
+        C1320,224,1080,352,720,256
+        C360,160,120,288,0,192
+        Z
+      " />
+  </svg>
 <!-- Yorum Formu -->
-<section class="mt-12">
-  <h2 id="yorum-birak" class="text-3xl font-bold text-center text-red-700 sm:text-center mb-6">
+<section class="mt-16">
+  <h2 id="yorum-birak" class="text-3xl font-bold text-center text-red-700 mb-6">
     {% trans "Yorum Bırak" %}
   </h2>
 
